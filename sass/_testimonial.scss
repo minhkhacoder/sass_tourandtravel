@@ -1,0 +1,80 @@
+/** @format */
+
+.testimonial {
+  margin-bottom: 270px;
+  &-main {
+    max-width: 1070px;
+    width: 100%;
+    position: relative;
+  }
+  &-heading {
+    margin-bottom: 60px;
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content {
+    width: 100%;
+    margin-right: 170px;
+  }
+  &-rating {
+    color: #ffbb0c;
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &-desc {
+    font-family: $third-font;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+  &-name {
+    color: $gray-darkest;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 218%;
+  }
+  &-office {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 75px;
+    &-main {
+      padding-left: 50px;
+    }
+    &-content {
+      max-width: 450px;
+      margin-right: 0;
+    }
+    &-image {
+      padding: 33px;
+    }
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    margin-bottom: 75px;
+    &-content {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      flex-direction: column;
+      gap: 50px 0;
+    }
+    &-content {
+      margin-right: 0;
+    }
+    &-heading {
+      font-size: 30px;
+    }
+  }
+}
